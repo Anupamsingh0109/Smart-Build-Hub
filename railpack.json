@@ -1,0 +1,5 @@
+{
+  "packages": [
+    "libcairo2-dev"
+  ]
+}
