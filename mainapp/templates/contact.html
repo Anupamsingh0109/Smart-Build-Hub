@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+contact page
+{% endblock %}
+
+
+{% block main %}
+<div class="row mt-5">
+   <div class="col-sm-6 mx-auto ">
+      <p class="fw-semibold" id="p"> GET IN TOUCH</p>
+      <h1 style="padding-left: 140px;"><b><b>Ready to Start Your Project?</b></b></h1>
+      <p style="padding-left: 140px;">Contact us today to discuss your construction needs. Our team is ready to help
+         bring your vision to life with
+         our expert services and dedication to excellence.
+      </p>
+      <div class="row">
+         <div class="col-sm-4 text-end" data-aos="fade-up-right">
+            <p><i class="fa-solid fa-location-dot fa-2x text-white fa-bounce"
+                  style="background-color: red; height: 50px; width: 50px; border-radius: 30% ; padding:10px ;">
+               </i>
+            </p>
+         </div>
+
+         <div class="col-sm-8 "  data-aos="fade-up-right">
+            <b> Our Location </b><br>
+            123 Construction Ave, Building City, 10001
+         </div>
+
+      </div>
+
+      <div class="row"  data-aos="fade-up-right">
+         <div class="col-sm-4 text-end" data-aos="fade-up-right">
+            <p><i class="fas fa-phone  fa-2x text-white fa-bounce"
+                  style="background-color: red; height: 50px; width: 50px; border-radius: 30% ; padding:10px ;">
+               </i>
+            </p>
+         </div>
+
+         <div class="col-sm-8"  data-aos="fade-up-right">
+            <b> Call Us</b><br>
+            (555) 123-4567
+         </div>
+
+      </div>
+
+      <div class="row">
+         <div class="col-sm-4 text-end" data-aos="fade-up-right">
+            <p><i class="fas fa-envelope fa-2x text-white  fa-bounce"
+                  style="background-color: red; height: 50px; width: 50px; border-radius: 30% ; padding:10px ;">
+               </i>
+            </p>
+         </div>
+
+         <div class="col-sm-8"  data-aos="fade-up-right">
+            <b> Email Us </b><br>
+            info@constructioncompany.com
+         </div>
+
+      </div>
+      <p style="padding-left: 179px;margin-top: 10px;"  data-aos="fade-up-right">
+         <a href=""><i class="fa-brands fa-facebook  fa-2x text-white fa-bounce"
+               style="background-color: red; height: 50px; width: 50px; border-radius: 30% ; padding:10px ;"></i></a>
+         <a href=""> <i class="fa-brands fa-twitter  fa-2x text-white fa-bounce"
+               style="background-color: red; height: 50px; width: 50px; border-radius: 30% ; padding:10px ;"></i></a>
+         <a href=""><i class="fa-brands fa-instagram  fa-2x text-white fa-bounce"
+               style="background-color: red; height: 50px; width: 50px; border-radius: 30% ; padding:10px ;"></i></a>
+         <a href=""><i class="fa-brands fa-linkedin-in fa-2x text-white fa-bounce"
+               style="background-color: red; height: 50px; width: 50px; border-radius: 30% ; padding:10px ;"></i></a>
+      </p>
+   </div>
+   <div class="col-sm-6  " >
+      <div class="row  form-wrapper">
+         <div class="col-sm-9 mx-auto mt-5 mb-5" style="border: 2px solid red; border-radius: 18px;">
+            {% if messages %}
+            {% for m in messages %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+               {{m}}
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+
+            {% endfor %}
+            {% endif%}
+
+            <form action="" method="post">
+               {% csrf_token %}
+               <div class="mb-3 mt-5">
+                  <label for="name" class="form-label text-danger  fw-bold">Name</label>
+                  <input type="text" class="form-control custom-foucus" id="name" name="name" required>
+               </div>
+
+               <div class="mb-3">
+                  <label for="contactno" class="form-label  text-danger fw-bold">Contact Number</label>
+                  <input type="text" class="form-control   custom-foucus" id="contactno" name="contactno" required>
+               </div>
+               <div class="mb-3">
+                  <label for="email" class="form-label text-danger fw-bold">Email.</label>
+                  <input type="email" class="form-control custom-foucus" id="email" name="email" required>
+               </div>
+
+               <div class="mb-3">
+                  <label for="subject" class="form-label text-danger fw-bold">Subject</label>
+                  <input type="text" class="form-control custom-foucus" id="subject" name="subject" required>
+               </div>
+
+
+
+               <div class="mb-5">
+                  <label for="message" class="form-label text-danger fw-bold">Message</label>
+                  <textarea class="form-control  custom-foucus" id="message" name="message" rows="5"></textarea>
+               </div>
+
+
+               <div class="d-grid gap-2 mb-5" style="border-radius: 60%;">
+                  <button class="btn btn-danger" type="submit">Sumbit Enquiry</button>
+
+               </div>
+
+
+            </form>
+
+
+
+         </div>
+      </div>
+
+   </div>
+</div>
+{% endblock %}

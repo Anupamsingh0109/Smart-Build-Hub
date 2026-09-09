@@ -1,0 +1,40 @@
+{% extends 'homeownerbase.html'%}
+
+
+{% block homeowner %}
+
+
+<h2>Welcome Homeowners</h2>
+<div class="row mx-auto">
+  <div class="col-sm-3 mt-4">
+    <div class="card" style="width: 15rem; border: 2px solid rgb(93, 46, 234);  border-radius:50px 0 50px 0">
+      <P class=" fw-semibold  text-center ">Total Projects </i></P>
+      <p class=" fw-semibold  text-center" style="font-size: 50px;">8 </p>
+      <P class="text-center ">All projects created by you</P>
+    </div>
+  </div>
+  <div class="col-sm-3 mt-4">
+    <div class="card" style="width: 15rem; border: 2px solid rgb(93, 46, 234);  border-radius:50px 0 50px 0">
+      <P class=" fw-semibold  text-center ">Ongoing Projects</P>
+      <p class=" fw-semibold  text-center" style="font-size: 50px;">1<i class="fa fa-spinner text-secondary"></i></p>
+      <P class="text-center ">All projects created by you</P>
+    </div>
+  </div>
+  <div class="col-sm-3 mt-4">
+    <div class="card" style="width: 15rem; border: 2px solid rgb(93, 46, 234);  border-radius:50px 0 50px 0">
+      <P class=" fw-semibold  text-center ">Completed Projects</P>
+      <p class=" fw-semibold  text-center" style="font-size: 50px;">2 <i class="fa fa-check text-danger"></i></p>
+      <P class="text-center ">All projects created by you</P>
+    </div>
+  </div>
+  <div class="col-sm-3 mt-4">
+    <div class="card" style="width: 15rem; border: 2px solid rgb(93, 46, 234);  border-radius:50px 0 50px 0">
+      <P class=" fw-semibold  text-center ">Pending Approvals</P>
+      <p class=" fw-semibold  text-center" style="font-size: 50px;">0</p>
+      <P class="text-center ">All projects created by you</P>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

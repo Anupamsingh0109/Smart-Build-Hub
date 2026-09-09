@@ -1,0 +1,84 @@
+{% extends 'adminbase.html'%}
+
+
+{% block admin %}
+<div class="row ">
+    <div class="col-sm-12 text-light">
+        <h3 class="text-dark"> <b>Dashboard</b></h3>
+    </div>
+</div>
+<!--first row card start  -->
+<div class="row mt-4 ps-5">
+    <img src="" alt="">
+    <div class="col-sm-4 " id="rotate-card">
+        <div class="card-admin py-2" style="width: 19rem; ">
+            <P class=" fw-semibold  text-center ">REGISTERED HOMEOWNERS</P>
+            <p class=" fw-semibold  text-center" style="font-size: 50px;">{{th}}</p>
+            <P class="text-center ">ALL time registered homeowners</P>
+        </div>
+    </div>
+
+    <div class="col-sm-4 ">
+        <div class="card-admin py-2" style="width: 19rem;">
+            <P class=" fw-semibold text-center ">REGISTERED CONSTRACTORS</P>
+            <p class=" fw-semibold  text-center" style="font-size: 50px;">{{tc}}</p>
+            <P class="text-center">ALL time registered constructors</P>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="card-admin py-2" style="width: 19rem;">
+            <P class=" fw-semibold text-center">TOTAL PROJECT</P>
+            <p class=" fw-semibold  text-center" style="font-size: 50px;">{{tp}}</p>
+            <P class="text-center">project added to platform</P>
+        </div>
+    </div>
+</div>
+
+<!-- first row  card end -->
+
+
+<!-- second card row strat -->
+
+<div class="row mt-5  ps-5">
+    <div class="col-sm-4 ">
+        <div class="card-admin py-2 " style="width: 19rem;">
+            <P class=" fw-semibold text-center  ">COMPLETE PROJECT</P>
+            <p class=" fw-semibold  text-center" style="font-size: 50px;">{{trp}}</p>
+            <P class="text-center  ">Succesfully finished project</P>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="card-admin py-2" style="width: 19rem;">
+            <P class=" fw-semibold text-center ">ONGOING PROJECT</P>
+            <p class=" fw-semibold  text-center" style="font-size: 50px;">{{tcp}}</p>
+            <P class="text-center  ">Currently under construction</P>
+        </div>
+    </div>
+    
+    <div class="col-sm-4">
+        <div class="card-admin py-2" style="width: 19rem;height: 12rem;">
+            <P class=" fw-semibold text-center ">TOTAL ENQUIY</P>
+            <p class=" fw-semibold  text-center" style="font-size: 50px;">{{enq}}</p>
+            <P class="text-center  ">project behind schedule</P>
+        </div>
+    </div>
+    
+
+    <!-- <div class="col-sm-4">
+        <div class="card-admin py-2" style="width: 19rem;">
+            <P class=" fw-semibold  text-center ">TOTAL ENQUIY</P>
+            <p class=" fw-semibold  text-center" style="font-size: 50px;">{{enqs}}</p>
+            <P class=" text-center ">project behind schedule</P>
+        </div>
+    </div> -->
+</div>
+
+
+<!-- second card row end -->
+
+
+
+
+{% endblock %}

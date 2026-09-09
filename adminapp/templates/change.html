@@ -1,0 +1,57 @@
+{% extends 'adminbase.html'%}
+
+
+{% block admin %}
+<div class="row">
+    <div class="col-sm-12">
+        <h3>
+            Change Password
+        </h3>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-sm-5 mx-auto py-auto " style="border: 2px solid black; border-radius: 29px;">
+       <h2 class="ps-5 mt-4"> Change Password form</h2> 
+        <!-- {% if messages %}
+            {% for m in messages %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+               {{m}}
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+
+            {% endfor %}
+            {% endif%} -->
+        <form  method="post">
+            {% csrf_token %}
+            <div class="mb-3 mt-5">
+                <label for="oldpwd" class="form-label text-danger  fw-bold">Old Password</label>
+                <input type="password" class="form-control custom-foucus " name="oldpwd" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="np" class="form-label  text-danger fw-bold">New Password</label>
+                <input type="password" class="form-control   custom-foucus" name="newpwd" required>
+            </div>
+            <div class="mb-3">
+                <label for="confim" class="form-label text-danger fw-bold">Confirm Password</label>
+                <input type="password" class="form-control custom-foucus" name="confirmpwd" required>
+            </div>
+
+            
+
+
+            <div class="d-grid gap-2 mb-5 mt-5 " style="width: 300px ; padding-left: 100px; ">
+                <button class="btn btn-danger" type="submit">Change Password</button>
+
+            </div>
+
+
+        </form>
+
+    </div>
+</div>
+{% endblock%}

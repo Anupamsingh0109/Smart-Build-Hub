@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'  %}">
+    <link rel="stylesheet" href="{% static 'css/style.css'  %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <!-- nav bar start -->
+        <div class="row sticky-top" style="height: 85px; background-color: black; ">
+            <div class="col-sm-3 text-center ps-5" id="img">
+                <img src="{% static 'img/cap.png' %}" alt="" height="80px">
+            </div>
+            <div class="col-sm-6 fw-semibold mt-4" id="nav2">
+                <a href="{% url 'index' %} ">Home</a>
+                <a href="{% url 'service' %}"> Service</a>
+                <a href="{% url 'project' %}"> Project</a>
+                <a href="{% url 'about' %}"> About </a>
+                <a href="{% url 'contact' %}"> Contact</a>
+
+            </div>
+            <div class="col-sm-3 fw-semibold" id="Sign">
+                <a href="{% url 'sign' %}">Sign In</a>
+                        
+            </div>
+
+        </div>
+        <!-- nav bar end -->
+
+
+        {% block main %}
+
+        {% endblock %}
+
+
+
+
+        <!--footer start   -->
+        <div class="row  " style="padding-top: 80px; background-color: black;">
+            <footer class="col-sm-12  text-muted" id="footer">
+                <!-- Footer -->
+
+
+
+                <!-- Section: Links  -->
+                <section class="">
+                    <div class="container " id="anchor">
+                        <!-- Grid row -->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-sm-4  ">
+                                <!-- Content -->
+                                <small>
+                                    <h6 class="text-uppercase fw-semibold ps-5 ">
+                                        <img src="{% static 'img/cap.png' %}" alt="" height="50px">
+                                    </h6>
+                                    <p class="mt-5">
+
+                                        An innovative digital platform transforming traditional home construction
+                                        methods through seamless collaboration between homeowners, architects,
+                                        contractors, and suppliers.
+
+                                    </p>
+                                    <div id="icon">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+                                    </div>
+
+                                </small>
+                            </div>
+
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-sm-2  ps-5 mb-4 text-white ">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-semibold " id="Quick">
+                                    Quick Links
+                                </h6>
+                                <small>
+                                    <p>
+                                        <a href="#!" class="text-reset">Home</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Service</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Project</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Abouts Us</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Contact</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Blog</a>
+                                    </p>
+                                </small>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-sm-3   text-white" id="anchor">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-semibold mb-2">
+                                    Our Services
+                                </h6>
+                                <small>
+                                    <p>
+                                        <a href="#!" class="text-reset">Project Management</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Architecuture Planning</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Contractactor Collaboration</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Supply Chain Solution</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Sustainability Consulting</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Client Portal Access</a>
+                                    </p>
+                                </small>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-sm-3   fw-semibold text-white" id="Contact">
+                                <!-- Links -->
+                                <small>
+                                    <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                                    <p><i class="fas fa-home me-3"></i> 123 Construction Avenue <br> &nbsp &nbsp
+                                        &nbsp &nbsp &nbsp
+                                        bulding District CA 902010</p>
+                                    <p>
+                                        <i class="fas fa-envelope me-3 "></i>
+                                        Info@smartbuldhub.com
+                                    </p>
+                                    <p><i class="fas fa-phone me-3 mb-2 "></i> +91 700757886</p>
+                                    <p>
+                                        Subscribe to our newsletter
+                                    </p>
+                                </small>
+
+
+                                <div>
+                                    <input type="email" name="Email" placeholder="Your Email" class="email-input">
+                                    <a href=""> <button id="button"><i class="fa-solid fa-right-long"></i></button></a>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+
+                <div class="row">
+                    <div class="col-sm-10 mx-auto mb-4 ">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.3676339566673!2d80.96215187527199!3d26.923557376640776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd7e0637bf21%3A0x730fe46201abc68a!2sLalganj%20raebareli!5e0!3m2!1sen!2sin!4v1753330986639!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                        <hr id="hr">
+
+
+
+
+                        <div class="row">
+                            <div class="col-sm-6"><small>&copy 2025 SmartBuild Hub. Designed and Developed by <a href="{% url 'self' %}" 
+                                        style="color: rgba(221, 176, 13, 0.686); text-decoration: none;"> Anupam Singh.</a></small></div>
+
+                            <div class="col-sm-6 text-center" id="terms">
+                                <a href=""> Privacy Policy</a>
+                                <a href=""> Terms of Service</a>
+                                <a href=""> Cookies Policy</a>
+                                <a href="{% url 'admindash' %}">💇‍♀️</a>
+                                <a href="{% url 'homeownerdash' %}">h</a>
+                                <a href="{% url 'contractordash' %}">c</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Footer -->
+        </div>
+    </div>
+
+
+
+    <!-- footer end -->
+    </div>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+
+</html>

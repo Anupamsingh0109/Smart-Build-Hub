@@ -1,0 +1,65 @@
+ {% extends 'contractorbase.html'%}
+ {% load static %}
+
+    {% block contractor %}
+
+    <div class="row">
+      <h2>Welcome Contractor</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 mt-3">
+        <div class="card " style="width: 15rem; border-radius: 20px;">
+          <h1 class="text-danger fw-bold  text-center">6</h1>
+          <p class="text-center">Total Project</p>
+          <div class="card-footer " style="height: 10px; background: rgb(26, 16, 215); border-radius: 0 0 20px 20px;">
+            <p class="text-light text-center">All projects created by you </p>
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="col-sm-3 mt-3">
+        <div class="card " style="width: 15rem; border-radius: 20px;">
+          <h1 class="text-danger fw-bold  text-center">2</h1>
+          <p class="text-center">Ongoing Project</p>
+          <div class="card-footer " style="height: 10px; background:orangered; border-radius: 0 0 20px 20px;">
+            <p class="text-light text-center">project under construction</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-3 mt-3">
+        <div class="card " style="width: 15rem; border-radius: 20px;">
+          <h1 class="text-danger fw-bold  text-center">6</h1>
+          <p class="text-center">Completed Project</p>
+          <div class="card-footer " style="height: 10px; background: rgb(17, 124, 35); border-radius: 0 0 20px 20px;">
+            <p class="text-light text-center">100% Completed  project</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-3 mt-3">
+        <div class="card " style="width: 15rem; border-radius: 20px;">
+          <h1 class="text-danger fw-bold text-center">0</h1>
+          <p class="text-center">Pending Approvals</p>
+          <div class="card-footer " style="height: 10px; background:red; border-radius: 0 0 20px 20px;">
+            <p class="text-light text-center">none pending project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+
+      <div class="col-sm-4 ">
+        <div class="card">
+          <img src="{% static 'img/chart.gif'%}" alt="">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card mt-5" >
+           <img src="{% static 'img/status.jpg'%}" alt="" >
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    {% endblock %}
