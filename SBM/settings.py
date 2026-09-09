@@ -27,8 +27,11 @@ SECRET_KEY = 'django-insecure-e63%0o&+7tgi@vtdj$$t)x1uma%myhklh0=f@$&uqchr5fn9_n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://smartbuildhub.up.railway.app/']
-
+ALLOWED_HOSTS = [
+    "smartbuildhub.up.railway.app",
+    "localhost",
+    "127.0.0.1",
+]
 
 # Application definition
 
