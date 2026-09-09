@@ -1,5 +1,5 @@
 {
-  "packages": [
+  "buildAptPackages": [
     "libcairo2-dev"
   ]
 }
