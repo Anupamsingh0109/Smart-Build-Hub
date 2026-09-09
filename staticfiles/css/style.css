@@ -1,0 +1,546 @@
+  #background-video {
+    position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   z-index: -1;
+   filter: blur(px);
+ }
+
+ .overlay {
+   position:fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0,0,0,0.3);
+   z-index: 0;
+  
+ 
+
+
+  } 
+ */ #nav2 {
+   height: 80px;
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+
+
+
+ }
+
+ #nav2 a {
+   color: white;
+   margin: 0 15px;
+  
+   font-size: 15px;
+   position: relative;
+   padding-bottom: 4px;
+   text-decoration: none;
+   transition: color 0.4s ease;
+
+ }
+
+ #nav2 a:hover {
+   color: red;
+ }
+
+
+ #nav2 a::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 2px;
+   width: 100%;
+   background: red;
+   transform: scaleX(0);
+   transform-origin: right;
+   transition: transform 0.4s ease;
+
+ }
+
+ #nav2 a:hover::after {
+   transform: scaleX(1);
+   transform-origin: left;
+
+ }
+
+ #Sign {
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 20px;
+   background-color: black;
+
+ }
+
+ #Sign a {
+   color: white;
+   margin: 5px 15px;
+   height: 45%;
+   width: 25%;
+   font-size: 17px;
+   position: relative;
+   padding-left: 17px;
+   padding-top: 5px;
+   text-decoration: none;
+   display: inline-block;
+   background: rgb(253, 36, 36);
+   border-radius: 10%;
+   /* border: 1px solid black; */
+
+ }
+
+ #Sign a:hover {
+   background-color: red;
+ }
+
+
+
+
+
+ #footer {
+
+   background-color: black;
+   padding-top: 20px;
+
+
+ }
+
+ #anchor {
+   color: white;
+
+
+ }
+
+ #icon a {
+   padding: 2%;
+   color: gray;
+
+
+
+ }
+
+ #icon a:hover {
+   color: red;
+   border-radius: 50%;
+ }
+
+
+
+
+ #map {
+   margin-top: 5%;
+   border-radius: 2%;
+ }
+
+ .email-input {
+   background-color: rgb(238, 226, 226);
+   border: 2px solid red;
+   padding: 7px;
+   border-radius: 5px;
+   outline: none;
+   transition: border o.3s ease;
+ }
+
+ .email input :focus {
+   border: 2px solid red;
+ }
+
+ #button {
+   width: 50px;
+   background-color: red;
+   border-left: none;
+   color: rgb(238, 226, 226);
+   margin-left: -5px;
+   padding: 7px;
+
+
+ }
+
+ #hr {
+   border: 1px solid rgb(242, 237, 237);
+
+
+ }
+
+ #terms {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #terms a {
+   color: white;
+   margin-left: 30px;
+
+   font-size: 13px;
+   position: relative;
+   padding-bottom: 2px;
+   padding-left: 30px;
+   text-decoration: none;
+
+ }
+
+ #terms a:hover {
+   color: red;
+ }
+
+ /* index page start */
+ #building {
+   margin: 100px auto;
+   color: red;
+   background-color: blue;
+
+
+
+ }
+
+ #drem {
+   background: url("../img/dream.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+
+ }
+
+ #p {
+   padding-top: 120px;
+   padding-left: 150px;
+  
+   color: red;
+
+
+ }
+
+ #text {
+   font-size: 50px;
+   padding-left: 120px;
+
+ }
+
+ #text1 {
+   font-size: 20px;
+   padding-left: 148px;
+   color: dark;
+
+ }
+
+ #get {
+   padding-left: 140px;
+   background-color: red;
+
+ }
+
+ #section work {
+   padding-left: 140px;
+
+ }
+
+ .card-body1 {
+   height: 300px;
+   width: 350px;
+   background: url("../img/modern.webp");
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   transition: background-postion 0.4s ease, transform 0.5s ease;
+   box-shadow: x 0, 20px rgba(255, 0, 0, 0.4);
+
+ }
+
+ .card-body1:hover {
+   background-position: top;
+   transform: scale(1.05);
+
+ }
+
+ .view-btn {
+   position: absolute;
+
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+
+   transform: translateY(30px);
+   transition: all 0.4s ease;
+
+ }
+
+ .card-body1:hover .view-btn {
+   opacity: 1;
+   transform: translateY();
+ }
+
+ .card-body2 {
+   height: 300px;
+   width: 400px;
+   background: url("../img/R.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   transition: background-postion 0.5s ease, transform 0.5s ease;
+
+ }
+
+ .card-body2:hover {
+   background-position: top;
+   transform: scale(1.05);
+
+ }
+
+ .view-btn {
+   position: absolute;
+   bottom: 10px;
+   margin-right: 50px;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   opacity: 0;
+   transform: translateY(30px);
+   transition: all 0.4s ease;
+
+ }
+
+ .card-body2:hover .view-btn {
+   opacity: 1;
+   transform: translateY();
+ }
+
+ .card-body3 {
+   height: 300px;
+   width: 400px;
+   background: url("../img/sunsta.png");
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   transition: background-postion 0.5s ease, transform 0.5s ease;
+
+ }
+
+ .card-body3:hover {
+   background-position: top;
+   transform: scale(1.05);
+
+ }
+
+ .view-btn {
+   position: absolute;
+
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   opacity: 0;
+   transform: translateY(30px);
+   transition: all 0.4s ease;
+
+ }
+
+ .card-body3:hover .view-btn {
+   opacity: 1;
+   transform: translateY();
+ }
+
+
+
+
+
+
+ .card-body4 {
+   height: 300px;
+   width: 350px;
+   background: url("../img/manuf.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   transition: background-postion 0.5s ease, transform 0.5s ease;
+
+ }
+
+ .card-body4:hover {
+   background-position: top;
+   transform: scale(1.05);
+
+ }
+
+ .view-btn {
+   position: absolute;
+
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   transform: translateY(30px);
+   transition: all 0.4s ease;
+
+ }
+
+ .card-body4:hover .view-btn {
+   opacity: 1;
+   transform: translateY();
+ }
+
+ .card-body5 {
+   height: 300px;
+   width: 400px;
+   background: url("../img/water.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   transition: background-postion 0.5s ease, transform 0.5s ease;
+
+ }
+
+ .card-body5:hover {
+   background-position: top;
+   transform: scale(1.05);
+
+ }
+
+ .view-btn {
+   position: absolute;
+
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+
+   transform: translateY(30px);
+   transition: all 0.4s ease;
+
+ }
+
+ .card-body5:hover .view-btn {
+   opacity: 1;
+   transform: translateY();
+ }
+
+ .card-body6 {
+   height: 300px;
+   width: 400px;
+   background: url("../img/urban d.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   transition: background-postion 0.5s ease, transform 0.5s ease;
+
+ }
+
+ .card-body6:hover {
+   background-position: top;
+   transform: scale(1.05);
+
+ }
+
+ .view-btn {
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   transform: translateX(-170px);
+   transition: all 0.4s ease;
+
+ }
+
+ .card-body6:hover .view-btn {
+   opacity: 1;
+   transform: translateY();
+ }
+
+ /* contact start */
+
+ .custom-foucus:focus {
+   border-color: red !important;
+
+   box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.4) !important;
+
+   outline: none !important;
+
+
+
+ }
+
+ .custom-foucus:hover {
+   border-color: red !important;
+   box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.4) !important;
+ }
+
+
+
+ /* from edit */
+ .form-wrapper {
+  
+   transition: background-image 0.5s ease-in-out;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 20%px;
+ }
+
+ /* .form-wrapper:hover { */
+ /* background: url("../img/balls-bouncing.gif"); */
+ /* } */
+
+ /* contact end */
+ /* service  start */
+
+ #s1 {
+   padding-top: 140px;
+   background-image: url(../img/sktech.jpg);
+   background-size: cover;
+   background-position: center;
+   backdrop-filter: blur(5px);
+
+ }
+
+ /* sevice end */
+ .card-h {
+   /* width: 150px; */
+   /* height: 100px; */
+   /* align-items: center; */
+   /* display: flex; */
+   background-color: rgb(248, 218, 218);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   /* justify-content: center; */
+   transition: opacity 0.1s ease, transfrom 0.1s ease;
+
+ }
+
+ .card-h:hover {
+   opacity: 0;
+   transform: scale(0);
+   pointer-events: none;
+ }
+ #bg-video{
+  position: fixed;
+  top:0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+ }
