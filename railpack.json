@@ -1,5 +1,6 @@
 {
-  "packages": [
+  "$schema": "https://schema.railpack.com",
+  "buildAptPackages": [
     "libcairo2-dev"
   ]
 }
